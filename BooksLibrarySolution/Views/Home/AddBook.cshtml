@@ -1,0 +1,26 @@
+﻿<div id="addArea">
+    <table>
+        <tr>
+            <td>Title: </td>
+            <td><input id="title" class="txtBx" type="hidden" data-bind="value: title" /></td>
+        </tr>
+        <tr>
+            <td>Author: </td>
+            <td><input id="author" class="txtBx" type="hidden" data-bind="value: author" /></td>
+        </tr>
+        <tr>
+            <td>Description: </td>
+            <td><input id="description" class="txtBx" type="hidden" data-bind="value: description" /></td>
+        </tr>
+        <tr>
+            <td>PublishYear: </td>
+            <td><input id="publishYear" class="txtBx" type="hidden" data-bind="value: publishYear" /></td>
+        </tr>
+    </table>
+    <input id="add" type="button" data-bind="click: addNew" value="Add" />
+    <input id="create" type="hidden" data-bind="click: createNew" value="Create" />
+    <input id="cancel" type="hidden" data-bind="click: cancel" value="Cancel" />
+    <div style="display: none" id="message">
+        ERROR
+    </div>
+</div>
